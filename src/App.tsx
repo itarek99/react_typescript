@@ -1,5 +1,5 @@
-import Greet from "./components/Greet";
-import Counter from "./components/state/Counter";
+import Box from "./components/context/Box";
+import ThemeContextProvider from "./components/context/ThemeContext";
 
 const App = () => {
   const superHeros = [
@@ -18,10 +18,9 @@ const App = () => {
   ];
 
   return (
-    <div>
-      <Greet name="Tarek" messageCount={10} isLoggedIn={true} />
-      <Counter />
-    </div>
+    <ThemeContextProvider>
+      <Box />
+    </ThemeContextProvider>
   );
 };
 export default App;
