@@ -1,5 +1,5 @@
-import Box from "./components/context/Box";
-import ThemeContextProvider from "./components/context/ThemeContext";
+import User from "./components/context/User";
+import UserContextProvider from "./components/context/UserContext";
 
 const App = () => {
   const superHeros = [
@@ -18,9 +18,9 @@ const App = () => {
   ];
 
   return (
-    <ThemeContextProvider>
-      <Box />
-    </ThemeContextProvider>
+    <UserContextProvider>
+      <User />
+    </UserContextProvider>
   );
 };
 export default App;
