@@ -1,5 +1,5 @@
-import User from "./components/context/User";
 import UserContextProvider from "./components/context/UserContext";
+import MutableRef from "./components/ref/MutableRef";
 
 const App = () => {
   const superHeros = [
@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <UserContextProvider>
-      <User />
+      <MutableRef />
     </UserContextProvider>
   );
 };
