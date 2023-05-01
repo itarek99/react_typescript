@@ -1,10 +1,12 @@
 import UserContextProvider from "./components/context/UserContext";
-import Toast from "./components/templateLiterals/Toast";
+import Button from "./components/html/Button";
 
 const App = () => {
   return (
     <UserContextProvider>
-      <Toast position="center" />
+      <Button variant="primary" onClick={() => console.log("Clicked")}>
+        Primary Button
+      </Button>
     </UserContextProvider>
   );
 };
